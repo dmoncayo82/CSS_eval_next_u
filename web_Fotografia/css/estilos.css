@@ -1,0 +1,233 @@
+ body {
+        font-family: 'Dancing Script', cursive;
+        background: #02010a;
+      }
+
+/* Encabezados */
+header{
+		background: #5b7989;
+		border-radius: 10px 10px 0px 0px;
+		text-shadow: 2px #02010a;
+		color: white;
+		padding-left: 10px;
+		animation: header-animacion 5s;
+}
+
+
+#menu-principal ul {
+	overflow: hidden;
+	color: white; 
+	padding: 0;
+	margin: 0;
+}
+/* Menú Principal de Navegación */
+#menu-principal ul li {
+	padding: 3px;
+	list-style-type: none;
+	display: inline-block;
+}
+
+a.class1 {color:white;}
+a.class1:link  {text-decoration: underline; color: white;}
+a.class1:visited {text-decoration: underline; color: white;}
+a.class1:hover {text-decoration: underline; color: black;}
+a.class1:active {text-decoration: none; color: white;}
+
+a.class2 {color:black;}
+a.class2:link  {text-decoration: underline; color: black;}
+a.class2:visited {text-decoration: underline; color: black;}
+a.class2:hover {text-decoration: underline; color: white;}
+a.class2:active {text-decoration: none; color: black;}
+
+
+#contenido {
+	padding: 10px;
+	background: #82c3a6;
+	text-align: center;
+	justify-content: center;
+	color: white;
+}
+
+img{
+	float: center;
+	width: 100%;
+	#02010a
+	box-shadow: 2px 2px 2px #02010a;
+	-moz-box-shadow: 2px 2px 2px #02010a;
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+	-khtml-box-shadow: 2px 2px 2px #02010a;
+
+}
+
+#contenido_secundario {
+	padding: 1px;
+	background: #d5c75f;
+	border: 1px;
+	text-align: center;
+	color: white;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+	display: inline-block;
+}
+
+figure {
+	text-align: center;
+	border: 2px;
+
+}
+
+#imagen1 img{
+	text-align: center;
+}
+
+#imagen1 img:hover{
+	border: solid 2px #82c3a6;
+	transform: rotate(10deg);
+}
+
+#imagen2 img{
+	text-align: center;
+}
+
+#imagen2 img:hover{
+	border: solid 2px #82c3a6;
+	-moz-transform: translate(20px, -5px);
+    -ms-transform: translate(20px, -5px);
+    -o-transform: translate(20px, -5px);
+    -webkit-transform: translate(20px, -5px);
+    transform: translate(20px, -5px);
+}
+#imagenF img{
+	text-align: left;
+	float: left;
+	width: 20px;
+}
+.grid-container {
+	padding: 10px;
+}
+.grid-item {
+  	padding: 5px;
+  	font-size: 30px;
+  	text-align: center;
+}
+#img_ret_pai1 img{
+	border: solid 2px #82c3a6;
+	filter: blur(10px);
+}
+#img_ret_pai2 img{
+	border: solid 2px #82c3a6;
+	filter:grayscale(100%);
+}
+#img_ret_pai3 img{
+	border: solid 2px #82c3a6;
+	filter: blur(10px);
+}
+#img_ret_pai4 img{
+	border: solid 2px #82c3a6;
+	filter:grayscale(100%);
+}
+#img_ret_pai5 img{
+	border: solid 2px #82c3a6;
+}
+#img_ret_pai6 img{
+	border: solid 2px #82c3a6;
+	filter:grayscale(100%);
+}
+
+footer{
+	background: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+	text-shadow: 2px #02010a;
+	color: black;
+	padding-left: 10px;
+}
+
+.contenedorFooter {
+	margin: 0;
+  	padding: 0;
+	flex-direction: row;
+	display: inline-block;
+}
+.contenedorFooter div {
+  box-sizing: border-box;
+}
+.c1 p {
+	text-align: left;
+}
+.c1 h1 {
+	text-align: left;
+}
+.c2 p {
+	text-align: left;
+}
+.c2 h1 {
+	text-align: left;
+}
+.c3 p {
+	text-align: left;
+}
+.c3 h1 {
+	text-align: left;
+}
+.c3 a {
+	text-align: left;
+}
+.c4 p {
+	text-align: left;
+}
+.c4 h1 {
+	text-align: left;
+}
+@media (max-width: 900px){
+	.contenido{
+		width: 100%;
+	}
+	.contenedorFooter {
+		display: inline-block;
+	}
+	a.class2 {
+		display:block;
+	}
+	header{
+		text-align: center;
+	}	
+}
+@media (min-width: 900px) {
+	.contenido{
+		width: 900px;
+	}
+	.contenedorFooter {
+		display: flex;
+	}
+	.contenedorFooter div {
+  		width: 23.5%;
+	}
+	a.class2 {
+		display:block;
+	}
+	.grid-container {
+		padding: 10px;
+   		display: inline-grid;
+  		grid-template-columns: auto auto auto;
+	}
+	.grid-item {
+  		padding: 5px;
+  		font-size: 30px;
+  		text-align: center;
+	}
+	header{
+		text-align: left;
+	}
+	#menu-principal ul {
+	float: right;
+	}
+}
+@keyframes header-animacion {
+	0% { margin-top: 150%; }
+	60% { margin-top: -5%; }
+	100% { margin-top: 0%; }
+}
